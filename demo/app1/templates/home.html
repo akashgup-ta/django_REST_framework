@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .a {
+            color: orangered;
+        }
+
+        .row {
+            /* border: solid 1 px red; */
+            height: 150px;
+            font-size: 0;
+        }
+
+        .col {
+            /* border: solid 2px yellow; */
+            display: inline-block;
+            height: 100%;
+            width: 50%;
+            text-align: center;
+        }
+
+        h3 {
+            color: blue;
+            text-align: center;
+            font-family: sans-serif;
+        }
+
+        p {
+            font-family: sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>I have created Django model with 10 different types of field ( char, int, float, file), create a rest api to
+        list all object of model where particular field is null</h3>
+    <h3>test api with postman. And in postman output it will display list of fieldnames which are null</h3>
+    <h3 class="a">http://127.0.0.1:8000/app1/emp/</h3>
+    <br>
+    <br>
+
+    <div>
+        <div class="row">
+            <div class="col"><img
+                    src="https://cdn.cookielaw.org/logos/70564414-548a-4286-8ad7-04d95b172a08/e26443c0-68d1-47c8-b8fc-9bc765da2e95/3a159462-db70-43cf-a27d-f602a6baed44/pm-logo-horiz.png"
+                    alt="" height="150px"></div>
+            <div class="col"><img
+                    src="https://www.educative.io/v2api/collection/10370001/6383415582785536/image/5173523415040000"
+                    alt="" height="150px"></div>
+        </div>
+    </div>
+
+    <p>Methods</p>
+    <br>
+    <p>GET method - by using GET we get all the data, Example : http://127.0.0.1:8000/app1/emp/</p>
+    <p>To get particular data (only one record), change to get request by id we can get particular data | Example - get
+        request by id : 127.0.0.1:8000/app1/emp/1/</p>
+    <br>
+    <p>POST method - by using POST we can add data | Example - 127.0.0.1:8000/app1/emp/ , after write json</p>
+    <br>
+    <p>PUT method - by using PUT we can update data (complete update) | Example - to update record 2 :
+        127.0.0.1:8000/app1/emp/2/, after write json</p>
+    <br>
+    <p>PATCH method - patch method is used for particial updation, it means we can update only one record of particular
+        record | Example - to patch record 2 : 127.0.0.1:8000/app1/emp/2/, after write json</p>
+    <br>
+    <p>DELETE method - we can delete only one record at a time | Example - to delete record 3 :
+        127.0.0.1:8000/app1/emp/3/ </p>
+
+    <br>
+
+</body>
+
+</html>
